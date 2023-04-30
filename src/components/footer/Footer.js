@@ -4,9 +4,15 @@ import { SiAmazonpay } from 'react-icons/si';
 import { BsCreditCard2Back } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaTiktok, FaTelegramPlane } from 'react-icons/fa';
+import { useLocation } from 'react-router';
 
 
 function Footer() {
+  let location = useLocation()
+  
+  if (location.pathname === "/login") {
+    return <></>
+  }
   return (
     <div className='footer'>
         <div className="footer__cart container">

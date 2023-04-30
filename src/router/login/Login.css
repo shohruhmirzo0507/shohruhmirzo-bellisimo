@@ -1,0 +1,57 @@
+
+.go__home{
+    background: dodgerblue;
+    border-radius: 5px;
+    color: white;
+
+}
+.login{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(244, 56, 203), dodgerblue);
+}
+.login__input{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px gray;
+    outline: none;
+
+}
+.login__btns{
+    width: 80%;
+    height: 40px;
+    background: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

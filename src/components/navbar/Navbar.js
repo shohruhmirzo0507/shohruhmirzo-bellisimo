@@ -8,13 +8,24 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link, useLocation } from 'react-router-dom';
+
 
 
 function Navbar() {
+  let location = useLocation()
+  
+  if (location.pathname === "/login") {
+    return <></>
+  }
+ 
   return (
     <div>
 <div className="nav__top container">
+  <Link to={'/'}>
+
    <img className='belis' width={260} src="https://bellissimo.uz/_next/image?url=%2Fimages%2Flogo.png&w=320&q=75" alt="" />
+  </Link>
     <div className="adres">
         <p><b>Shahar:</b> <b className='ferd'>Toshkent</b></p>
         <p> <b className='starik'><AiFillStar/></b><b> 4.72/5</b></p>
@@ -26,8 +37,12 @@ function Navbar() {
 <b className='time'>40 daqiqada tekin yetkazib beramiz yoki pitsa bepul</b>
     </div>
     <img className='halol'  src="https://bellissimo.uz/_next/image?url=%2Fimages%2Fhalal.png&w=64&q=75" alt="" />
+   
     <p>O'zbek</p>
-    <p>Kirish</p>
+   <Link to={"/login"}>
+   <p>Kirish</p>
+   </Link>
+    
 </div>
 
 <div className="swiper container">
