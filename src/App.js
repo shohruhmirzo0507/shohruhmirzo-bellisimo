@@ -4,6 +4,7 @@ import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import Admin from './router/admin/Admin';
+import Cart from './router/cart/Cart';
 import Home from './router/home/Home';
 import Login from './router/login/Login';
 import SingleRoute from './router/single-route/SingleRoute';
@@ -18,6 +19,7 @@ function App() {
       <br />
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/cart/:id' element={<Cart/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/admin/*' element={<Admin/>}/>
       <Route path='/single/:id' element={<SingleRoute/>}/>

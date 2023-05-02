@@ -14,7 +14,6 @@
 .single__top{
     width: 800px;
     height: 500px;
-    border: 1px solid green;
     background: white;
     border-radius: 40px;
     display: flex;
@@ -98,7 +97,6 @@ width: 100%;
     .single__top{
     width: 700px;
     height: 680px;
-    border: 1px solid green;
     background: white;
     border-radius: 40px;
     display: flex;

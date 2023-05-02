@@ -22,7 +22,10 @@ function Banner() {
             </Link>
             <h3 className='text__kom'>{item.title}</h3>
             <p>{item.text}</p>
+            <Link to={`/cart/${item.id}`}>
             <button className='price'><b>{item.price} so'm</b></button>
+            </Link>
+
           </div>)
         }
 
@@ -41,7 +44,9 @@ function Banner() {
             </Link>
             <h3 className='text__kom10'>{item.titles}</h3>
             <p className='mern'>{item.texts}</p>
+            <Link to={`/cart/${item.id}`}>
             <button className='price10'><b>{item.prices} so'm</b></button>
+            </Link>
           </div>)
         }
       </div>

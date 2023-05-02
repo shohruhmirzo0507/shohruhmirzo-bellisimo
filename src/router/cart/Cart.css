@@ -1,0 +1,154 @@
+.cart__bmv{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.oppo{
+    width: 70%;
+}
+.bmv__flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0px 0px 3px 0px rgb(213, 211, 211);
+}
+.bmv__flex1{
+    width: 28%;
+    height: 170px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 3px 0px rgb(213, 211, 211);
+
+}
+.flex__img{
+    width: 350px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.div{
+    font-size: 17px;
+}
+.plas{
+    width: 140px;
+    height: 120px;
+    padding: 20px 0px 10px 15px;
+}
+.muth {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(239, 238, 238);
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+.muth__btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+.rig__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+.rig__top1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+.rig__end{
+    width: 85%;
+    height: 55px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    background: green;
+    font-size: 20px;
+    margin: 20px 0px 0px 25px;
+}
+
+@media screen and (max-width:1000px) {
+    .bmv__flex1{
+        display: none;
+    }
+    .bmv__flex{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+   .vvv{
+    width: 120px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

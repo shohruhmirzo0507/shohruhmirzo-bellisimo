@@ -88,7 +88,9 @@ function Navbar() {
     <button className='kombo1'><b>Souslar</b></button>
   </div>
   <div className="ford1">
+    <Link to={"/cart"}>
     <button className='buy'><b>Savatcha | 0</b></button>
+    </Link>
   </div>
 </div>
 
