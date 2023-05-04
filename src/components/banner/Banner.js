@@ -39,6 +39,7 @@ function Banner() {
 
 
       <h2>Pitsa</h2>
+     
       <br />
       <div className="banner10 container">
 
