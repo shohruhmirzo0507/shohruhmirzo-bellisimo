@@ -2,9 +2,13 @@ import React from 'react'
 import "./Banner.css"
 import { DATA, PITSA } from "../../static/index"
 import { Link, useLocation } from 'react-router-dom'
+import {ADD_TO_CARD, REMOVE_FROM_CARD, DEC_FROM_CARD, DELETE_ALL_CART} from "../../context/action/actionType"
+import { useDispatch } from 'react-redux'
+
 
 function Banner() {
   let location = useLocation()
+  const dispatch = useDispatch()
   
   if (location.pathname === "/login") {
     return <></>
@@ -17,14 +21,16 @@ function Banner() {
 
         {
           DATA?.map((item) => <div key={item.id} className="banner__cart">
-            <Link to={`/page/${item.id}`}>
+            <div>
+              <Link to={`/page/${item.id}`}>
               <img className='banner__top' width={250} src={item.url} alt="" />
-            </Link>
+              </Link>
+            </div>
             <h3 className='text__kom'>{item.title}</h3>
             <p>{item.text}</p>
-            <Link to={`/cart/${item.id}`}>
-            <button className='price'><b>{item.price} so'm</b></button>
-            </Link>
+            <div>
+            <button onClick={() => dispatch({type: ADD_TO_CARD, payload: item})} className='price'><b>{item.price} so'm</b></button>
+            </div>
 
           </div>)
         }
@@ -44,9 +50,9 @@ function Banner() {
             </Link>
             <h3 className='text__kom10'>{item.titles}</h3>
             <p className='mern'>{item.texts}</p>
-            <Link to={`/cart/${item.id}`}>
+            <div>
             <button className='price10'><b>{item.prices} so'm</b></button>
-            </Link>
+            </div>
           </div>)
         }
       </div>

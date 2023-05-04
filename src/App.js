@@ -19,15 +19,13 @@ function App() {
       <br />
      <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/cart/:id' element={<Cart/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/admin/*' element={<Admin/>}/>
       <Route path='/single/:id' element={<SingleRoute/>}/>
       <Route path='/page/:id' element={<SinglePage/>}/>
      </Routes>
-      <Banner/>
       <br />
-      <Footer/>
     </div>
   );
 }

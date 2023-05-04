@@ -86,6 +86,9 @@ justify-content: space-between;
     .bmv__flex1{
         display: none;
     }
+    .oppo{
+        width: 100%;
+    }
     .bmv__flex{
         width: 100%;
     }

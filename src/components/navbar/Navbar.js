@@ -89,7 +89,7 @@ function Navbar() {
   </div>
   <div className="ford1">
     <Link to={"/cart"}>
-    <button className='buy'><b>Savatcha | 0</b></button>
+    <button className='buy'><b>Savatcha</b></button>
     </Link>
   </div>
 </div>
