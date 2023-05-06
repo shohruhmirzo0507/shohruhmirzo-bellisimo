@@ -11,9 +11,13 @@ function Cart() {
 
   const selector = useSelector(s => s.cart)
   console.log(selector);
+
+  const PITSA = useSelector(s => s.cart)
+  console.log(selector);
   return (
     <div className="cart__bmv container">
       <div className="oppo">
+
         {
           selector?.map((item) => <div key={item.id} className="bmv__flex">
             <div className="flex__img">
@@ -33,6 +37,8 @@ function Cart() {
             </div>
           </div>)
         }
+        
+        
 
       </div>
 

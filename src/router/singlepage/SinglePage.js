@@ -4,9 +4,12 @@
  import { DATA} from "../../static/index"
  import { GrFormNext } from 'react-icons/gr';
  import { Link } from 'react-router-dom';
-
+ import {ADD_TO_CARD, REMOVE_FROM_CARD, DEC_FROM_CARD, DELETE_ALL_CART} from "../../context/action/actionType"
+ import { useDispatch } from 'react-redux'
 
  function SinglePage() {
+  const dispatch = useDispatch()
+
     const param = useParams()
   const oneItem = DATA.find(i =>i.id === param.id)
    return (
@@ -50,7 +53,7 @@
                 <button className='bbb__btn'><b>{oneItem.price} so'm</b></button>
                    </div>
               <div className='short__bottom'>
-                <button className='fff__end'>Qo'shish</button>
+                <button  onClick={() => dispatch({type: ADD_TO_CARD, payload: oneItem})} className='fff__end'>Qo'shish</button>
                    </div>
             </div>
           </div>

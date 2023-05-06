@@ -15,7 +15,7 @@ import { Link, useLocation } from 'react-router-dom';
 function Navbar() {
   let location = useLocation()
   
-  if (location.pathname === "/login") {
+  if (location.pathname === "/login" ) {
     return <></>
   }
  
